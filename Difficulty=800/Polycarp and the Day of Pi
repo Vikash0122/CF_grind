@@ -1,0 +1,26 @@
+#include <bits/stdc++.h> 
+using namespace std;
+
+void solve(){
+    string strmn;
+    cin>>strmn;
+    string s = "31415926535897932384626433832795028";
+    int m = strmn.size();
+    int cnt = 0;
+    for (int i=0; i<m; i++){
+        if(strmn[i]== s[i]){
+            cnt++;
+        }else {
+            break;
+        }
+    }
+    cout<<cnt<<"\n";
+}
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        solve();
+    }
+    return 0;
+}//vikash0122
